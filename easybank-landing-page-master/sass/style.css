@@ -1,1 +1,213 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f4f6;
+}
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+}
+
+.wraper .card-icon {
+  width: 100vw;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper .card-icon img {
+  width: 100px;
+  padding-bottom: 35px;
+}
+
+.wraper .card-icon h3 {
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.wraper .card-icon p {
+  color: #9698a6;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 15px 30px;
+  line-height: 28px;
+}
+
+.wraper .card-article {
+  background-color: white;
+  width: 100vw;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.wraper .card-article img {
+  width: 100%;
+  padding: 5px 10px 35px;
+  border-radius: 4% 4% 0 0;
+}
+
+.wraper .card-article blockquote {
+  color: #9698a6;
+  font-size: 14px;
+  padding: 0 35px 15px;
+}
+
+.wraper .card-article h5 {
+  font-size: 18px;
+  padding: 0 35px 15px;
+}
+
+.wraper .card-article p {
+  color: #9698a6;
+  font-size: 16px;
+  padding: 0 35px 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: white;
+  padding: 25px 0 25px;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: #f3f4f6;
+  }
+  .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100vw;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .wraper .card-icon {
+    width: 100vw;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    background-color: white;
+    margin-right: 50px;
+  }
+  .wraper .card-icon img {
+    width: 120px;
+    padding: 5px 15px 35px;
+  }
+  .wraper .card-icon h3 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px 15px 20px;
+  }
+  .wraper .card-icon p {
+    color: #9698a6;
+    font-size: 18px;
+    text-align: start;
+    padding: 5px 15px 30px;
+    line-height: 28px;
+  }
+  .wraper .card-article {
+    background-color: white;
+    width: 100vw;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .wraper .card-article img {
+    width: 100%;
+    padding: 5px 10px 35px;
+    border-radius: 4% 4% 0 0;
+  }
+  .wraper .card-article blockquote {
+    color: #9698a6;
+    font-size: 14px;
+    padding: 0 35px 15px;
+  }
+  .wraper .card-article h5 {
+    font-size: 18px;
+    padding: 0 35px 15px;
+  }
+  .wraper .card-article h5:hover {
+    color: #31d35c;
+    cursor: pointer;
+  }
+  .wraper .card-article p {
+    color: #9698a6;
+    font-size: 16px;
+    padding: 0 35px 15px;
+  }
+  .title {
+    text-align: start;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: white;
+    padding: 25px 150px 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
