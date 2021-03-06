@@ -10,6 +10,114 @@ body {
   background-color: #f3f4f6;
 }
 
+.button {
+  width: 15%;
+}
+
+.button button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+}
+
+.button button:hover {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+  cursor: pointer;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  margin: 10px;
+}
+
+nav .menu-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 85%;
+  display: wrap;
+}
+
+nav .menu-hamburger li {
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+}
+
+nav .menu-hamburger li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #2d314d;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header div div img {
+  -webkit-transform: translateY(-450px);
+          transform: translateY(-450px);
+}
+
+header div div h2, header div h2 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px 25px 35px;
+}
+
+header div div p, header div p {
+  color: #9698a6;
+  text-align: center;
+  padding: 0 30px 25px;
+}
+
+header div .button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +220,49 @@ body {
   body {
     background-color: #f3f4f6;
   }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  nav {
+    margin: 25px;
+  }
+  nav .logo {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .logo img {
+    width: 35%;
+    height: 40%;
+  }
+  nav .menu {
+    width: 50%;
+  }
+  nav .menu ul li a:hover {
+    border-bottom: 3px solid #31d35c;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .wraper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,6 +311,19 @@ body {
     text-align: start;
     padding: 5px 15px 30px;
     line-height: 28px;
+  }
+  .wraper header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .wraper header .wrapper div img {
+    width: 100%;
+    background-image: url("images/bg-intro-desktop.svg");
   }
   .wraper .card-article {
     background-color: white;

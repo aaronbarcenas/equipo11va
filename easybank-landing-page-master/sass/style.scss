@@ -20,6 +20,93 @@ body {
 }
 
 
+.button {
+  width: 15%;
+
+  button {
+    background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+
+    &:hover {
+      filter: invert(10%);
+      cursor: pointer;
+    }
+  }
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+nav>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  margin: 10px;
+
+  .menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 85%;
+    display: wrap;
+
+    li {
+      list-style: none;
+      padding: 15px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: $Dark-Blue;
+      }
+    }
+  }
+}
+
+header {
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    div img {
+      transform: translateY(-450px);
+    }
+
+    div h2, h2 {
+      font-size: 45px;
+      text-align: center;
+      padding: 15px 25px 35px;
+    }
+
+    div p, p {
+      color: $Grayish-Blue;
+      text-align: center;
+      padding: 0 30px 25px;
+    }
+
+    .button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
 .wraper {
   display: flex;
   flex-direction: column;
@@ -103,6 +190,57 @@ body {
     background-color: $Light-Grayish-Blue;
   }
 
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+
+  nav {
+    margin: 25px;
+
+    .logo {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 35%;
+        height: 40%;
+      }
+    }
+
+    .menu {
+      width: 50%;
+
+       ul li a {
+
+
+        &:hover {
+          border-bottom:3px solid $Lime-Green;
+        }
+      }
+      
+      
+      
+    }
+
+    
+  }
+
+  .menu {
+
+    ul {
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+  }
+
   .wraper {
     display: flex;
     flex-direction: row;
@@ -141,6 +279,21 @@ body {
       }
     }
   
+    header {
+
+      .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+
+        div img {
+          width: 100%;
+          background-image: url("images/bg-intro-desktop.svg");
+        }
+      }
+
+    }
+
+
     .card-article {
       background-color: white;
       width: 100vw;

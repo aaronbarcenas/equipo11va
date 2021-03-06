@@ -1,0 +1,32 @@
+.hamb-button {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 5px;
+  &:hover {
+      cursor: pointer;
+  }
+  &:before {
+      content: "";
+      width: 60%;
+      display: block;
+      height: 2px;
+      background-color: #333;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 14px;
+      box-shadow: 0px 10px 0 0 #333, 0px 20px 0 0 #333;
+  }
+}
+
+.display-mobile, .frequency-menu, .serch-menu  {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  &:checked + .display-mobile {
+      display: block;
+  }
+}
