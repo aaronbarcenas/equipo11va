@@ -34,4 +34,12 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .display-mobile {
   display: block;
 }
+
+.mauricio {
+  background: #333;
+}
+
+aside {
+  background: #aaa;
+}
 /*# sourceMappingURL=style.css.map */
